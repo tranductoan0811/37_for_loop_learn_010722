@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+  <p id="demo">demo</p>
+  <script>
+
+// Viết chương trình nhập vào một số bất kỳ lớn hơn 0. Tính tổng các phần tử từ 1 đến số vừa nhập vào.
+ 
+    let n, sum, display;
+    n = parseInt(prompt("Enter the number : "));
+    sum = 0;
+    display = '';
+
+    if (n <= 0) {
+
+      alert("Số nhập vào phải > 0. Bạn nhập lại nhé");
+
+    }
+
+    else {
+    for (i = 1; i <= n; i++) {
+
+      sum += i;
+
+    }
+    
+    display = ("Tổng các số từ số 1 đến số " + n + " = " + sum);
+    document.getElementById("demo").innerHTML = display;
+
+  }
+
+ 
+
+  </script>
+
+</body>
+
+</html>
